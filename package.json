@@ -1,0 +1,26 @@
+{
+  "name": "reason-uuid",
+  "version": "0.1.0",
+  "description": "BuckleScript bindings for node-uuid",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w"
+  },
+  "keywords": [
+    "uuid",
+    "guid",
+    "rfc4122",
+    "bucklescript",
+    "reason"
+  ],
+  "repository": "git@github.com:Dean177/reason-uuid.git",
+  "author": "Dean Merchant <deanmerchant@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "bs-platform": "5.0.6"
+  }
+}
