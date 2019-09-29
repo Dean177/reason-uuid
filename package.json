@@ -1,6 +1,6 @@
 {
   "name": "reason-uuid",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "BuckleScript bindings for node-uuid",
   "scripts": {
     "build": "bsb -make-world",
@@ -11,7 +11,13 @@
     "guid",
     "rfc4122",
     "bucklescript",
+    "bindings",
     "reason"
+  ],
+  "files": [
+    "src/Uuid.re",
+    "src/Uuid.rei",
+    "bsconfig.jsons"
   ],
   "repository": "git@github.com:Dean177/reason-uuid.git",
   "author": "Dean Merchant <deanmerchant@gmail.com>",

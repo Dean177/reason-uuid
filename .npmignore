@@ -1,6 +1,5 @@
 /*
 !./src
-# exclude BuckleScript output
 ./src/**/*.bs.js
 !./bsconfig.json
 !./package.json
