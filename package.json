@@ -1,6 +1,6 @@
 {
   "name": "reason-uuid",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "description": "BuckleScript bindings for node-uuid",
   "scripts": {
     "build": "bsb -make-world",
