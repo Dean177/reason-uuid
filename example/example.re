@@ -2,10 +2,10 @@
 Js.log(Uuid.V1.make());
 
 /* V3 using predefined DNS namespace */
-Js.log(Uuid.V3.make("hello.example.com", Uuid.Dns));
+Js.log(Uuid.V3.make("hello.example.com", Dns));
 
 /* V3 using predefined URL namespace */
-Js.log(Uuid.V3.make("http://example.com/hello", Uuid.Url));
+Js.log(Uuid.V3.make("http://example.com/hello", Url));
 
 /* V3 using a custom namespace */
 Js.log(
@@ -19,10 +19,10 @@ Js.log(
 Js.log(Uuid.V4.make());
 
 /* V5 using predefined Dns namespace */
-Js.log(Uuid.V5.make("hello.example.com", Uuid.Dns));
+Js.log(Uuid.V5.make("hello.example.com", Dns));
 
 /* V5 using predefined Url namespace */
-Js.log(Uuid.V5.make("http://example.com/hello", Uuid.Url));
+Js.log(Uuid.V5.make("http://example.com/hello", Url));
 
 /* V5 using a custom namespace */
 Js.log(

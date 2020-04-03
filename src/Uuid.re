@@ -4,13 +4,13 @@ type namespace =
   | Custom(string);
 
 module V1 = {
-  [@bs.module] external make: unit => string = "uuid/v1";
+  [@bs.module "uuid"] external make: unit => string = "v1";
 };
 
 module V3 = {
-  [@bs.module] external uuidv3: (string, string) => string = "uuid/v3";
-  [@bs.module "uuid/v3"] external dns: string = "DNS";
-  [@bs.module "uuid/v3"] external url: string = "URL";
+  [@bs.module "uuid"] external uuidv3: (string, string) => string = "v3";
+  [@bs.module "uuid"] [@bs.scope "v3"] external dns: string = "DNS";
+  [@bs.module "uuid"] [@bs.scope "v3"] external url: string = "URL";
 
   let make = (value, namespace) =>
     switch (namespace) {
@@ -21,13 +21,13 @@ module V3 = {
 };
 
 module V4 = {
-  [@bs.module] external make: unit => string = "uuid/v4";
+  [@bs.module "uuid"] external make: unit => string = "v4";
 };
 
 module V5 = {
-  [@bs.module] external uuidv5: (string, string) => string = "uuid/v5";
-  [@bs.module "uuid/v5"] external dns: string = "DNS";
-  [@bs.module "uuid/v5"] external url: string = "URL";
+  [@bs.module "uuid"] external uuidv5: (string, string) => string = "v5";
+  [@bs.module "uuid"] [@bs.scope "v5"] external dns: string = "DNS";
+  [@bs.module "uuid"] [@bs.scope "v5"] external url: string = "URL";
   let make = (value, namespace) =>
     switch (namespace) {
     | Dns => uuidv5(value, dns)

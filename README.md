@@ -7,7 +7,7 @@
 ## Installation
 
 ```sh
-yarn add reason-uuid
+npm install reason-uuid --save
 ```
 
 Then add `"reason-uuid"` to the the `bs-dependencies` section of your `bsconfig.json`.
